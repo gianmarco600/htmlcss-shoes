@@ -52,7 +52,7 @@ body{
     right: 0;
     z-index: 500;
     display: inline-block;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 #head{
@@ -76,6 +76,7 @@ body{
     text-transform: uppercase;
     padding: 0 10px;
     transition: 0.2s;
+    display: none;
 }
 
 .mk2 > nav > .elem:nth-child(2n-1){
@@ -121,6 +122,11 @@ body{
 .mk2 nav:hover{
     width: 250px;
     transition: 0.5s;
+}
+
+.mk2 nav:hover .elem{
+    display: block;
+    transition: 0.6s;
 }
 
 .mk2 > nav > .elem:hover{
