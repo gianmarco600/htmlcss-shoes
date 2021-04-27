@@ -65,16 +65,17 @@ body{
 }
 
 .mk2 > nav > .elem{
-    height: 50px;
+    height: 70px;
     width: 100%;
     display: block;
     text-align: center;
     font-size: 30px;
-    line-height: 50px;
+    line-height: 70px;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     padding: 0 10px;
+    transition: 0.2s;
 }
 
 .mk2 > nav > .elem:nth-child(2n-1){
@@ -107,12 +108,14 @@ body{
     text-align: center;
 }
 
-.info{
+.mk2 .info{
     width: 100%;
     font-size: 15px;
     line-height: 1.6em;
     display: none;
     font-weight: 300;
+    padding: 0 5px;
+    text-transform: capitalize;
 }
 
 .mk2 nav:hover{
@@ -121,7 +124,7 @@ body{
 }
 
 .mk2 > nav > .elem:hover{
-    height: 140px;
+    height: 170px;
     transition: 0.2s;
     color: white;
     background-color: rgba(0, 0, 0, 0.842);
@@ -180,7 +183,7 @@ body{
 }
 
 #shoes2 .title{
-    color:lightyellow;
+    color:red;
 }
 
 #shoes3{
