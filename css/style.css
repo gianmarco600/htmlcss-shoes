@@ -16,7 +16,7 @@ body{
 
 /* nav */
 
-nav{
+.normal nav{
     position: fixed;
     top: 0;
     right: 0;
@@ -26,7 +26,7 @@ nav{
     z-index: 500;
 }
 
-.elem{
+.normal > nav > .elem{
     float: left;
     margin:5px 15px;
     background-color:white;
@@ -42,6 +42,99 @@ nav{
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.7), 0 3px 6px 0 rgba(124, 124, 124, 0.5);
 }
 
+/* -----------------------------------nav mk2----------------------- */
+
+.mk2 > nav{
+    height: 100vh;
+    width: 0;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    z-index: 500;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+#head{
+    height: 75px ;
+    line-height: 75px;
+    font-size: 35px;
+    text-align: center;
+    background-color: white;
+    color:black;
+}
+
+.mk2 > nav > .elem{
+    height: 50px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.mk2 > nav > .elem:nth-child(2n-1){
+    background-color: lightgray;
+}
+
+.mk2 .menu{
+    position:absolute;
+    height: 100px;
+    width: 50px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    left:-50px;
+    top: 50%;
+    transform: translate(0 , -50%);
+    background-color: white;
+    text-align: center;
+    line-height: 95px;
+    font-size: 40px;
+}
+
+.mk2 .menu span{
+    vertical-align: super;
+    text-align: center;
+}
+
+.mk2 > nav > .elem > span{
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.info{
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.6em;
+    display: none;
+    font-weight: 300;
+}
+
+.mk2 nav:hover{
+    width: 250px;
+    transition: 0.5s;
+}
+
+.mk2 > nav > .elem:hover{
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+.mk2 > nav > .elem:hover{
+    height: 140px;
+    transition: 0.2s;
+    color: white;
+}
+
+.mk2 > nav > .elem:hover .info{
+    display: block;
+}
+
+/* -----------------------------main------------------------------*/
 .container{
     width: 100%;
     height: auto;
@@ -103,7 +196,7 @@ nav{
 
 /* hover */
 
-a:hover {
+.normal a:hover {
     font-size: 45px;
     transition: 0.5s;
 }
