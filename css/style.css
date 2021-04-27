@@ -121,13 +121,10 @@ body{
 }
 
 .mk2 > nav > .elem:hover{
-    background-color: rgba(0, 0, 0, 0.842);
-}
-
-.mk2 > nav > .elem:hover{
     height: 140px;
     transition: 0.2s;
     color: white;
+    background-color: rgba(0, 0, 0, 0.842);
 }
 
 .mk2 > nav > .elem:hover .info{
