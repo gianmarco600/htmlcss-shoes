@@ -7,3 +7,64 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* nav */
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    z-index: 500;
+}
+
+.elem{
+    float: left;
+    margin:5px 15px;
+    background-color: aqua;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+}
+
+.box{
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.prodotto{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+}
+
+.container .title{
+    position: absolute;
+    left: 50%;
+    top:75%;
+    transform: translate(-50% , -50%);
+    font-size: 50px;
+    text-transform: uppercase;
+    color: yellow;
+}
