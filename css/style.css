@@ -56,12 +56,13 @@ body{
 }
 
 #head{
-    height: 75px ;
-    line-height: 75px;
+    height: 100px ;
+    line-height: 100px;
     font-size: 35px;
     text-align: center;
     background-color: white;
     color:black;
+    font-weight: 900;
 }
 
 .mk2 > nav > .elem{
@@ -94,8 +95,9 @@ body{
     transform: translate(0 , -50%);
     background-color: white;
     text-align: center;
-    line-height: 95px;
-    font-size: 40px;
+    line-height: 92px;
+    font-size: 50px;
+    transition: 0.4s;
 }
 
 .mk2 .menu span{
@@ -164,14 +166,15 @@ body{
     top:50%;
     left:50%;
     transform: translate(-50% , -50%);
+    width: 50%;
 }
 
 .container .title{
     position: absolute;
     left: 50%;
-    top:85%;
+    top:80%;
     transform: translate(-50% , -50%);
-    font-size: 80px;
+    font-size: 4em;
     text-transform: uppercase;
     text-align: center;
 }
